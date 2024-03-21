@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITEEE Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #053d23;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color: #fc8130;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #7f7fe3;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>VITEEE Form</h1>
+    <form id="viteee-form">
+        <h2>Personal Information</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required><br>
+
+        <h2>Academic Information</h2>
+        <label for="hsc-percentage">HSC Percentage:</label>
+        <input type="number" id="hsc-percentage" name="hsc-percentage" step="0.01" required><br>
+        <label for="hsc-year">HSC Passing Year:</label>
+        <input type="number" id="hsc-year" name="hsc-year" required><br>
+        <label for="board">Board:</label>
+        <input type="text" id="board" name="board" required><br>
+
+        <h2>Address</h2>
+        <label for="address-line1">Address Line 1:</label>
+        <input type="text" id="address-line1" name="address-line1" required><br>
+        <label for="address-line2">Address Line 2:</label>
+        <input type="text" id="address-line2" name="address-line2"><br>
+
+    
+        <!-- Submit Button -->
+        <input type="submit" value="Submit" >
+        <style>
+            input[type="submit"] {
+                background-color: #4caf50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </form>
+    
